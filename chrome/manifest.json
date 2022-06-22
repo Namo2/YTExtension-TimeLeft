@@ -1,0 +1,13 @@
+{
+  "name": "YT-TimeLeft",
+  "description": "Displays the time needed to finish the video.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["http://www.youtube.com/watch?v=*", "https://www.youtube.com/watch?v=*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
